@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/tquintal/tip-calculator-app)
-- [Live Site](https://github.com/tquintal/tip-calculator-app)
+- [Live Site](tip-calculator-app-nu.vercel.app)
 
 ## Author
 
