@@ -38,8 +38,6 @@ body {
 .title {
   letter-spacing: 10px;
   color: $very-dark-cyan;
-  // position: absolute;
-  // top: 10%;
   margin: 25px;
 }
 
@@ -60,7 +58,7 @@ body {
 
 .second-panel {
   background-color: $very-dark-cyan;
-  color: white; /*TEMP*/
+  color: $white;
 }
 
 .first-panel p {
@@ -83,6 +81,10 @@ body {
   flex-wrap: wrap;
 }
 
+.tip-btns-btn {
+  cursor: pointer;
+}
+
 .tip-btns-btn,
 .tip-btns-custom {
   width: 95px;
@@ -97,7 +99,6 @@ body {
   text-align: center;
   outline: none;
   transition: 150ms;
-  cursor: pointer;
 }
 
 .tip-btns-custom {
@@ -106,16 +107,26 @@ body {
   color: $very-dark-cyan;
 }
 
-.tip-btns-custom:focus {
+.tip-btns-custom-active {
   background-color: $white;
   border-color: $strong-cyan;
 }
 
-.tip-btns-btn-focus {
+.tip-btns-btn-active {
   background-color: $light-grayish-cyan;
   border-color: $light-grayish-cyan;
   color: $very-dark-cyan;
   transition: 150ms;
+}
+
+.icon-placeholder {
+  position: absolute;
+  margin-top: -6.2em;
+  margin-left: 1em;
+}
+
+.icon-dollar {
+  margin-top: -2.1em;
 }
 
 .people-text {
@@ -159,6 +170,10 @@ body {
   gap: 75px;
 }
 
+.person {
+  color: $dark-grayish-cyan-2;
+}
+
 .second-panel p {
   font-size: 14px;
 }
@@ -179,6 +194,12 @@ body {
   cursor: pointer;
 }
 
+@media (hover: hover) {
+  .reset-btn:hover {
+    background-color: $light-grayish-cyan;
+  }
+}
+
 #bill-input,
 #people-input {
   text-align: right;
@@ -190,7 +211,7 @@ body {
 
 #people-input:focus,
 #bill-input:focus {
-  border-color: $strong-cyan !important;
+  border-color: $strong-cyan;
 }
 
 @media screen and (max-width: 840px) {
@@ -206,7 +227,7 @@ body {
 
   #bill-input,
   #people-input {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .second-panel {
@@ -242,6 +263,24 @@ body {
 
   .reset-btn {
     font-size: 16px;
+  }
+}
+
+.attribution {
+  margin: 15px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  all: unset;
+  color: #000000;
+  cursor: pointer;
+  transition: 200ms;
+}
+@media (hover: hover) {
+  .attribution a:hover {
+    color: #ffffff;
+    transition: 200ms;
   }
 }
 

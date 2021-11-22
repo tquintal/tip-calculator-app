@@ -3,40 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
     <script type="text/javascript" src="./script.js" defer></script>
-    <style>
-      .attribution {
-        margin: 15px;
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        all: unset;
-        color: #000000;
-        cursor: pointer;
-        transition: 200ms;
-      }
-      @media (hover: hover) {
-        .attribution a:hover {
-          color: #ffffff;
-          transition: 200ms;
-        }
-      }
-    </style>
   </head>
   <body>
     <h1 class="title">SPLI<br />TTER</h1>
@@ -53,15 +26,16 @@
           <p>Select Tip %</p>
           <div class="tip-btns-container">
             <div class="tip-btns">
-              <button class="tip-btns-btn" id="five-btn">5%</button>
-              <button class="tip-btns-btn" id="ten-btn">10%</button>
-              <button class="tip-btns-btn" id="fifteen">15%</button>
-              <button class="tip-btns-btn" id="twenty-five">25%</button>
-              <button class="tip-btns-btn" id="fifty">50%</button>
-              <!-- <button class="tip-btns-custom">Custom</button> -->
+              <button class="tip-btns-btn" id="5">5%</button>
+              <button class="tip-btns-btn" id="10">10%</button>
+              <button class="tip-btns-btn" id="15">15%</button>
+              <button class="tip-btns-btn" id="25">25%</button>
+              <button class="tip-btns-btn" id="50">50%</button>
               <input type="text" placeholder="Custom" class="tip-btns-custom" />
+              <div class="icon-placeholder">
+                <img src="./images/icon-person.svg" alt="person icon" />
+              </div>
             </div>
-            <!-- <div class="tip-btns"></div> -->
           </div>
         </div>
         <div>
@@ -70,6 +44,9 @@
             <p id="cannot-be-zero-people">Can't be zero</p>
           </div>
           <input type="number" placeholder="0" id="people-input" />
+          <div class="icon-placeholder icon-dollar">
+            <img src="./images/icon-dollar.svg" alt="person icon" />
+          </div>
         </div>
       </div>
       <div class="second-panel">
@@ -77,29 +54,22 @@
           <div class="second-panel-first-sec">
             <div>
               <p>Total</p>
-              <p style="color: hsl(184, 14%, 56%)">/ person</p>
+              <p class="person">/ person</p>
             </div>
-            <h1 id="total-person">00.00€</h1>
+            <h1 id="total-person">0.00$</h1>
           </div>
-
           <div class="second-panel-second-sec">
             <div>
               <p>Tip Amount</p>
-              <p style="color: hsl(184, 14%, 56%)">/ person</p>
+              <p class="person">/ person</p>
             </div>
-            <h1 id="total-tip-person">00.00€</h1>
+            <h1 id="total-tip-person">0.00$</h1>
           </div>
         </div>
-        <button class="reset-btn">Reset</button>
+        <button class="reset-btn" id="reset-btn">Reset</button>
       </div>
     </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/tquintal/" target="_blank">Tomás Quintal</a>.
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/tquintal/" target="_blank">Tomás Quintal</a>.
     </div>
   </body>
 </html>

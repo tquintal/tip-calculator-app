@@ -60,7 +60,6 @@ body {
 .second-panel {
   background-color: #00494d;
   color: white;
-  /*TEMP*/
 }
 
 .first-panel p {
@@ -93,6 +92,10 @@ body {
       flex-wrap: wrap;
 }
 
+.tip-btns-btn {
+  cursor: pointer;
+}
+
 .tip-btns-btn,
 .tip-btns-custom {
   width: 95px;
@@ -108,7 +111,6 @@ body {
   outline: none;
   -webkit-transition: 150ms;
   transition: 150ms;
-  cursor: pointer;
 }
 
 .tip-btns-custom {
@@ -117,17 +119,27 @@ body {
   color: #00494d;
 }
 
-.tip-btns-custom:focus {
+.tip-btns-custom-active {
   background-color: white;
   border-color: #26c0ab;
 }
 
-.tip-btns-btn-focus {
+.tip-btns-btn-active {
   background-color: #c5e4e7;
   border-color: #c5e4e7;
   color: #00494d;
   -webkit-transition: 150ms;
   transition: 150ms;
+}
+
+.icon-placeholder {
+  position: absolute;
+  margin-top: -6.2em;
+  margin-left: 1em;
+}
+
+.icon-dollar {
+  margin-top: -2.1em;
 }
 
 .people-text {
@@ -186,6 +198,10 @@ body {
   gap: 75px;
 }
 
+.person {
+  color: #7f9c9f;
+}
+
 .second-panel p {
   font-size: 14px;
 }
@@ -206,6 +222,12 @@ body {
   cursor: pointer;
 }
 
+@media (hover: hover) {
+  .reset-btn:hover {
+    background-color: #c5e4e7;
+  }
+}
+
 #bill-input,
 #people-input {
   text-align: right;
@@ -217,7 +239,7 @@ body {
 
 #people-input:focus,
 #bill-input:focus {
-  border-color: #26c0ab !important;
+  border-color: #26c0ab;
 }
 
 @media screen and (max-width: 840px) {
@@ -235,7 +257,7 @@ body {
   }
   #bill-input,
   #people-input {
-    font-size: 16px;
+    font-size: 18px;
   }
   .second-panel {
     padding: 25px;
@@ -266,6 +288,28 @@ body {
   }
   .reset-btn {
     font-size: 16px;
+  }
+}
+
+.attribution {
+  margin: 15px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  all: unset;
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+@media (hover: hover) {
+  .attribution a:hover {
+    color: #ffffff;
+    -webkit-transition: 200ms;
+    transition: 200ms;
   }
 }
 
