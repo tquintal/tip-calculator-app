@@ -30,6 +30,7 @@ billInput.addEventListener('input', () => {
         }
     }
 });
+
 peopleInput.addEventListener('input', setPeopleValue);
 peopleInput.addEventListener('input', () => {
     if (peopleInput.value === '0') {
@@ -67,10 +68,12 @@ buttons.forEach((button) => {
             reset();
         } else {
             currentTip = e.target.id;
-            calc();
             clearBtns();
             button.classList.add('tip-btns-btn-active');
-            nanChecker();
+            if (bill !== 0 && people !== 0) {
+                calc();
+                nanChecker();
+            }
         }
     });
 });
